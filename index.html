@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}الرئيسية - إنفنتي تايم{% endblock %}
+{% block content %}
+<h1>منتجاتنا</h1>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} - {{ product.price }}$</li>
+    {% endfor %}
+</ul>
+{% endblock %}
