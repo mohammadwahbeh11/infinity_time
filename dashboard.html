@@ -1,15 +1,1 @@
-{% extends 'base.html' %}
-{% block content %}
-<h2>لوحة التحكم</h2>
-<form method="POST" action="{{ url_for('admin.add_product') }}">
-    الاسم: <input name="name"><br>
-    الوصف: <input name="description"><br>
-    السعر: <input name="price"><br>
-    <button type="submit">إضافة المنتج</button>
-</form>
-<ul>
-    {% for product in products %}
-    <li>{{ product.name }} - {{ product.price }}</li>
-    {% endfor %}
-</ul>
-{% endblock %}
+
